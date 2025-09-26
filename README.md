@@ -29,17 +29,28 @@ Use Netcat (or Telnet) to:
      
 ### Phase 3: Exploitation
 Four critical vulnerabilities identified in the Nessus scan will be exploited using Metasploit to gain Access to the Systems:
- 
-  #### Metasploitable2 (IP- 192.168.56.5):
-      -  Setting up Msfconsole and Workplace (see Screenshots 5ai)
-      -  VNC no-authentication on port 5900- Full Desktop Control (see Screenshots 5bi, 5bii, 5biii & 5biv)
-      -  SMTP misconfiguration on port 25- Command Execution (see Screenshots 5ci, 5cii & 5ciii)
+  ### Metasploitable2 (IP- 192.168.56.5).
+  - Setting up Msfconsole and Workplace (see Screenshots 5ai)
+  - VNC no-authentication on port 5900- Full Desktop Control (see Screenshots 5bi, 5bii, 5biii & 5biv)
+  - SMTP misconfiguration on port 25- Command Execution (see Screenshots 5ci, 5cii & 5ciii)
 
-  #### Windows10 (IP- 192.168.56.11):
-      -  Generating and Transfering Payload for Port135 to Target System (see Screenshots 5di, 5dii & 5diii)
-      -  Setting up Msfconsole and Workplace (see Screenshots 5ei)
-      -  RPC Exposure on Port 135- System Shell (see Screenshots 5fi, 5fii & 5fiii)
-       -  Generating and Transfering Payload for Port445 to Target System (see Screenshots 5gi, 5gii & 5giii)
-      -  EternalBlue SMB exploit on Port 445→ Remote Code Execution (see Screenshots 5hi, 5hii & 5hiii).
+  ### Windows10 (IP- 192.168.56.11):
+  - Setting up Msfconsole and Workplace (see Screenshots 5ei)
+  - Generating and Transfering Payload for Port135 to Target System (see Screenshots 5di, 5dii & 5diii)
+  - RPC Exposure on Port 135- System Shell (see Screenshots 5fi & 5fii)
+  - Generating and Transfering Payload for Port445 to Target System (see Screenshots 5gi, 5gii & 5giii)
+  - EternalBlue SMB exploit on Port 445→ Remote Code Execution (see Screenshots 5hi & 5hii).
 
+### Phase 4: Post-Exploitation (Basic)
+Basic post-exploitation was done by running commands such as (whoami hostname, ipconfig/ifconfig, uname -a, netstat –an) on exploited ports as well as  listing user Accounts:.
+     
+  - Port 25 (see Screenshots 6ai, 6aii & 6aiii)
+  - Port 5900 (see Screenshots 6bi & 6bii)
+  - Port 135 (see Screenshots 6ci, 6cii & 6ciii)
+  - Port 445 (see Screenshots 6di, 6dii & 6diii)
 
+### Remediation Recommendation
+(see Screenshots 7ai)
+
+### Conclusion
+(see Screenshots 8ai)
