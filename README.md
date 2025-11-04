@@ -13,3 +13,15 @@ This Repository is a project to determine the security strength of TheCompany Lt
 ### The Project Tools
 
 [Project tools](https://raw.githubusercontent.com/FaithOnosoneTech/Penetration-Testing-Project/6b625636163ff1113b28157944ffd23b3f91f989/Project%20Tools.png)
+
+
+### PHASE1: Reconnaissance steps and findings
+Different tools were used for reconnaissance and their results are shown in the images referenced.
+
+Used nmap to:
+  - Discover live hosts in the network. (see Screenshots 3ai)
+  - Perform service and version detection on open ports. (see Screenshots 3aii)
+
+Used Netcat (or Telnet) to: 
+  - Grab service banners and identify versions of exposed services. (see Screenshots 3bi)
+
